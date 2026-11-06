@@ -5,7 +5,7 @@ SSH, Telnet ve seri konsol aynı pencerede; komut çıktıları tablolara dönü
 
 [**⬇ Son sürümü indir**](../../releases/latest)  ·  [Tüm sürümler](../../releases)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
 
-![Yan yana iki SSH oturumu ve kayıtlı oturum ağacı](docs/ekran/02-terminal.png)
+![Yan yana iki SSH oturumu ve kayıtlı oturum ağacı](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/02-terminal.png)
 
 ## Neler yapar?
 
@@ -15,19 +15,19 @@ Oturumdaki çıktıyı, yapıştırılan metni ya da bir dosyayı tek tıkla inc
 
 Tablo ve denetim desteği: Cisco IOS / IOS-XE, Aruba AOS-CX, Aruba AOS 8, Juniper Junos. Ruijie RGOS için denetim kuralları ve komut sözlüğü var.
 
-![Denetim bulguları ve show çıktısından oluşan tablolar](docs/ekran/04-analiz.png)
+![Denetim bulguları ve show çıktısından oluşan tablolar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/04-analiz.png)
 
 ### Komutları senin yerine tamamlar
 
 Komut çubuğu bağlandığın cihaza göre dil değiştirir: tamamlama, açıklamalı öneriler ve kısaltma açma sunar. Aynı komutu birden çok oturuma gönderebilir, sık kullandığın adımları makro olarak saklayabilirsin.
 
-![Komut çubuğunda açıklamalı tamamlama önerileri](docs/ekran/03-komut-cubugu.png)
+![Komut çubuğunda açıklamalı tamamlama önerileri](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/03-komut-cubugu.png)
 
 ### Bütün bağlantıların tek yerde
 
 SSH (parola, özel anahtar, eski cihazlar için eski algoritmalar), Telnet, seri, Rlogin, SUPDUP, Raw ve Bare SSH. Oturumlarını klasörlere ayır; şifreler işletim sisteminin anahtar zincirinde durur. PuTTY oturumlarını içe aktarabilirsin.
 
-![Protokol seçimi ve klasörlü kayıtlı oturumlar](docs/ekran/01-baglanti.png)
+![Protokol seçimi ve klasörlü kayıtlı oturumlar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/01-baglanti.png)
 
 ### Ve günlük işler için
 
