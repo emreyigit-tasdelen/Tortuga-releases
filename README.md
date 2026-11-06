@@ -3,7 +3,7 @@
 **Ağ cihazlarına bağlanmak, çıktıları okumak ve config denetlemek için tek terminal.**
 SSH, Telnet ve seri konsol aynı pencerede; komut çıktıları tablolara dönüşür, riskli ayarlar kendiliğinden işaretlenir.
 
-[**⬇ Son sürümü indir**](../../releases/latest)  ·  [Tüm sürümler](../../releases)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
+[**⬇ Son sürümü indir**](../../releases/latest)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
 
 ![Yan yana iki SSH oturumu ve kayıtlı oturum ağacı](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/02-terminal.png)
 
