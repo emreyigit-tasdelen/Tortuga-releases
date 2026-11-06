@@ -3,7 +3,7 @@
 **Ağ cihazlarına bağlanmak, çıktıları okumak ve config denetlemek için tek terminal.**
 SSH, Telnet ve seri konsol aynı pencerede; komut çıktıları tablolara dönüşür, riskli ayarlar kendiliğinden işaretlenir.
 
-[**⬇ Son sürümü indir**](../../releases/latest)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
+[**⬇ Son sürümü indir**](../../releases/latest)  ·  [Sürüm geçmişi](../../releases)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
 
 ![Yan yana iki SSH oturumu ve kayıtlı oturum ağacı](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/02-terminal.png)
 
@@ -25,7 +25,7 @@ Komut çubuğu bağlandığın cihaza göre dil değiştirir: tamamlama, açıkl
 
 ### Bütün bağlantıların tek yerde
 
-SSH (parola, özel anahtar, eski cihazlar için eski algoritmalar), Telnet, seri, Rlogin, SUPDUP, Raw ve Bare SSH. Oturumlarını klasörlere ayır; şifreler işletim sisteminin anahtar zincirinde durur. PuTTY oturumlarını içe aktarabilirsin.
+SSH (parola, özel anahtar, eski cihazlar için eski algoritmalar), Telnet, seri (USB konsol kablosunda baud hızı otomatik algılanır), Rlogin, SUPDUP, Raw ve Bare SSH. Oturumlarını klasörlere ayır; şifreler işletim sisteminin anahtar zincirinde durur. PuTTY oturumlarını içe aktarabilirsin.
 
 ![Protokol seçimi ve klasörlü kayıtlı oturumlar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/01-baglanti.png)
 
