@@ -1,71 +1,75 @@
 # Tortuga
 
-**Ağ cihazlarına bağlanmak, çıktıları okumak ve config denetlemek için tek terminal.**
-SSH, Telnet ve seri konsol aynı pencerede; komut çıktıları tablolara dönüşür, riskli ayarlar kendiliğinden işaretlenir.
+**English** · [Türkçe](README.tr.md)
 
-[**⬇ Son sürümü indir**](../../releases/latest)  ·  [Sürüm geçmişi](../../releases)  ·  [Kurulum](#kurulum)  ·  [Güvenlik](#güncellemeler-nasıl-güvenli)
+**One terminal for connecting to network devices, reading their output and auditing configs.**
+SSH, Telnet and serial console in the same window. Command output turns into tables, and risky settings are flagged automatically.
 
-![Yan yana iki SSH oturumu ve kayıtlı oturum ağacı](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/02-terminal.png)
+[**⬇ Download the latest version**](../../releases/latest)  ·  [Release history](../../releases)  ·  [Installation](#installation)  ·  [Security](#how-are-updates-secured)
 
-## Neler yapar?
+> The app's interface is currently in Turkish, as in the screenshots below. English is planned for version 1.0.4.
 
-### Çıktıyı analiz eder, config'i denetler
+![Two SSH sessions side by side and the saved session tree](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/02-terminal.png)
 
-Oturumdaki çıktıyı, yapıştırılan metni ya da bir dosyayı tek tıkla inceler. Cihaz türünü tanır, `show` çıktılarını süzülebilir tablolara çevirir; açık Telnet, varsayılan SNMP community, tersine çevrilebilir parola, hatalı port gibi sorunları satırıyla gösterir. İki config'i karşılaştırabilirsin.
+## What does it do?
 
-Tablo ve denetim desteği: Cisco IOS / IOS-XE, Aruba AOS-CX, Aruba AOS 8, Juniper Junos. Ruijie RGOS için denetim kuralları ve komut sözlüğü var.
+### Analyzes output and audits configs
 
-![Denetim bulguları ve show çıktısından oluşan tablolar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/04-analiz.png)
+Inspects session output, pasted text or a file with one click. It recognizes the device type, turns `show` output into filterable tables, and points to the exact line of problems such as open Telnet, default SNMP communities, reversible passwords and faulty ports. You can also compare two configs.
 
-### Komutları senin yerine tamamlar
+Table and audit support: Cisco IOS / IOS-XE, Aruba AOS-CX, Aruba AOS 8, Juniper Junos. Ruijie RGOS has audit rules and a command dictionary.
 
-Komut çubuğu bağlandığın cihaza göre dil değiştirir: tamamlama, açıklamalı öneriler ve kısaltma açma sunar. Aynı komutu birden çok oturuma gönderebilir, sık kullandığın adımları makro olarak saklayabilirsin.
+![Audit findings and tables built from show output](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/04-analiz.png)
 
-![Komut çubuğunda açıklamalı tamamlama önerileri](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/03-komut-cubugu.png)
+### Completes commands for you
 
-### Bütün bağlantıların tek yerde
+The command bar adapts its language to the device you're connected to, with completion, annotated suggestions and abbreviation expansion. You can send the same command to several sessions and save frequent steps as macros.
 
-SSH (parola, özel anahtar, eski cihazlar için eski algoritmalar), Telnet, seri (USB konsol kablosunda baud hızı otomatik algılanır), Rlogin, SUPDUP, Raw ve Bare SSH. Oturumlarını klasörlere ayır; şifreler işletim sisteminin anahtar zincirinde durur. PuTTY oturumlarını içe aktarabilirsin.
+![Annotated completion suggestions in the command bar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/03-komut-cubugu.png)
 
-![Protokol seçimi ve klasörlü kayıtlı oturumlar](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/01-baglanti.png)
+### All your connections in one place
 
-### Ve günlük işler için
+SSH (password, private key, legacy algorithms for older devices), Telnet, serial (baud rate is detected automatically on USB console cables), Rlogin, SUPDUP, Raw and Bare SSH. Organize sessions into folders; passwords stay in the operating system's keychain. You can import your PuTTY sessions.
 
-- Sekmeler ve yatay/dikey bölünmüş ekran
-- SFTP dosya paneli
-- Port yönlendirme (`-L`, `-R`, `-D`) ve jump host
-- Oturum logu ve geçmiş
-- Temalar, kısayollar, düşük bellek modu
+![Protocol selection and saved sessions in folders](https://raw.githubusercontent.com/emreyigit-tasdelen/Tortuga-releases/gorseller/01-baglanti.png)
 
-<sub>Görüntülerdeki oturumlar örnek veridir, bağlanılan cihaz bir test benzeticisidir.</sub>
+### And for everyday work
 
-## Kurulum
+- Tabs and horizontal/vertical split view
+- SFTP file panel
+- Port forwarding (`-L`, `-R`, `-D`) and jump host
+- Session logging and history
+- Themes, shortcuts, low memory mode
 
-1. [Son sürüm](../../releases/latest) sayfasından `Tortuga_<sürüm>_x64-setup.exe` dosyasını indir. Toplu dağıtım için `.msi` da var.
-2. Dosyayı çalıştır.
-3. "Windows kişisel bilgisayarınızı korudu" uyarısı çıkarsa **Ek bilgi → Yine de çalıştır** de. Kurulum dosyası henüz kod imzalama sertifikasıyla imzalı olmadığı için bu uyarı görünür.
+<sub>The sessions in the screenshots are sample data, and the connected device is a test simulator.</sub>
 
-Sonraki sürümler uygulama içinde bildirim olarak gelir ve onayınla kurulur.
+## Installation
 
-| Sistem | Durum |
+1. Download `Tortuga_<version>_x64-setup.exe` from the [latest release](../../releases/latest) page. An `.msi` is also available for mass deployment.
+2. Run the file.
+3. If you see the "Windows protected your PC" warning, choose **More info → Run anyway**. The warning appears because the installer isn't signed with a code signing certificate yet.
+
+Later versions arrive as in-app notifications and are installed with your approval.
+
+| System | Status |
 |---|---|
-| Windows 10/11 (64 bit) | Hazır |
-| Linux, macOS | Henüz yayınlanmadı |
+| Windows 10/11 (64-bit) | Available |
+| Linux, macOS | Not released yet |
 
-## Dosyayı doğrulama
+## Verifying the file
 
-Her sürümde `SHA256SUMS.txt` vardır. İndirdiğin dosyanın özeti oradakiyle aynı olmalı:
+Every release includes `SHA256SUMS.txt`. The hash of the file you downloaded must match the one listed there:
 
 ```
-certutil -hashfile Tortuga_<sürüm>_x64-setup.exe SHA256
+certutil -hashfile Tortuga_<version>_x64-setup.exe SHA256
 ```
 
-## Güncellemeler nasıl güvenli?
+## How are updates secured?
 
-- Her güncelleme paketi, geliştiricinin bilgisayarında çevrimdışı saklanan bir anahtarla imzalanır (`.sig` dosyaları). Anahtar GitHub'da ya da herhangi bir sunucuda bulunmaz.
-- Tortuga indirdiği paketi kurmadan önce imzayı, uygulamanın içine gömülü açık anahtarla doğrular. İmza tutmazsa, paket başka bir sürüme aitse ya da daha eski bir sürümse kurulmaz.
-- Güncelleme her zaman kullanıcının onayıyla kurulur.
+- Every update package is signed with a key kept offline on the developer's computer (`.sig` files). The key isn't on GitHub or any server.
+- Before installing a downloaded package, Tortuga verifies its signature with the public key embedded in the app. A package isn't installed if the signature doesn't match, if it belongs to a different version, or if it's an older version.
+- Updates are always installed with the user's approval.
 
 ---
 
-Bu repo yalnız derlenmiş sürümleri içerir, kaynak kod burada değildir. Kurulu Tortuga güncellemeleri buradan denetler ve indirir.
+This repository contains compiled releases only; the source code isn't here. Installed copies of Tortuga check for and download updates from here.
