@@ -76,4 +76,4 @@ This repository contains compiled releases only; the source code isn't here. Ins
 
 ## License
 
-Compiled releases of Tortuga are licensed under the [Apache License 2.0](LICENSE). © 2026 Emre Yiğit Taşdelen
+Tortuga is free to use, including commercially, but it is closed source and may not be redistributed or modified. See the [license](LICENSE). © 2026 Emre Yiğit Taşdelen

@@ -74,4 +74,4 @@ Bu repo yalnız derlenmiş sürümleri içerir, kaynak kod burada değildir. Kur
 
 ## Lisans
 
-Tortuga'nın derlenmiş sürümleri [Apache Lisansı 2.0](LICENSE) ile lisanslanmıştır. © 2026 Emre Yiğit Taşdelen
+Tortuga ticari kullanım dahil ücretsizdir, ancak kapalı kaynaklıdır; yeniden dağıtılamaz ve değiştirilemez. Ayrıntılar için [lisans](LICENSE) (İngilizce). © 2026 Emre Yiğit Taşdelen
