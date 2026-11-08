@@ -71,3 +71,7 @@ certutil -hashfile Tortuga_<sürüm>_x64-setup.exe SHA256
 ---
 
 Bu repo yalnız derlenmiş sürümleri içerir, kaynak kod burada değildir. Kurulu Tortuga güncellemeleri buradan denetler ve indirir.
+
+## Lisans
+
+Tortuga'nın derlenmiş sürümleri [Apache Lisansı 2.0](LICENSE) ile lisanslanmıştır. © 2026 Emre Yiğit Taşdelen

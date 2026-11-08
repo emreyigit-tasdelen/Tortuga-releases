@@ -73,3 +73,7 @@ certutil -hashfile Tortuga_<version>_x64-setup.exe SHA256
 ---
 
 This repository contains compiled releases only; the source code isn't here. Installed copies of Tortuga check for and download updates from here.
+
+## License
+
+Compiled releases of Tortuga are licensed under the [Apache License 2.0](LICENSE). © 2026 Emre Yiğit Taşdelen
